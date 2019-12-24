@@ -1,0 +1,49 @@
+<html>
+<head>
+<style> 
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+input[type=text]:focus {
+  border: 3px solid #555;
+}
+
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+</style>
+</head>
+<body>
+
+<form action="cancel.php" action="GET">
+  <label for="fname">Enter Your Passenger Id</label>
+  <input type="text" id="fname" name="pid">
+  <label for="country">Train No</label>
+    <select id="country" name="train">
+      <option value="12711">12711</option>
+      <option value="12842">12842</option>
+      <option value="16589">16589</option>
+	  <option value="16535">16535</option>
+      <option value="18237">18237</option>
+      <option value="18645">18645</option>
+	  <option value="17057">17057</option>
+      <option value="16318">16318</option>
+	 </select> 
+  <input type="submit" value="Confirm">
+</form>
+</body>
+</html>

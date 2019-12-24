@@ -1,0 +1,116 @@
+<html>
+<style>
+input[type=text], #country {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=number], #country {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+<body>
+
+<h1>Fill In Passenger Details</h1>
+
+<div>
+  <form action="passenger.php" method="GET">
+    <label for="fname">User id</label>
+    <input type="text" id="fname" name="uid" placeholder="user id">  
+  
+    <label for="fname">Name</label>
+    <input type="text" id="fname" name="pname" placeholder="Passenger name..">
+
+    <label for="lname">Age</label>
+    <input type="number" id="lname" name="age" max='100' min='5'>
+	
+	<label for="gender">Gender:</label></br>
+	<input type="radio" id ="gender" name="gender" value="F">F<input type="radio" name="gender" value="M">M</br></br>
+	
+	    <label for="fname">Profession</label>
+    <input type="text" id="fname" name="profession">
+
+	<label for="country">Quota</label>
+    <select id="country" name="quota">
+      <option value="MILITARY">Military</option>
+      <option value="HANDICAPPED">Handicapped</option>
+      <option value="SENIOR-CITIZEN">Senior Citizen</option>
+	  <option value="GEN">General</option>
+	  </select>
+  
+
+    <label for="country">Train No</label>
+    <select id="country" name="train">
+      <option value="12711">12711</option>
+      <option value="12842">12842</option>
+      <option value="16589">16589</option>
+	  <option value="16535">16535</option>
+      <option value="18237">18237</option>
+      <option value="18645">18645</option>
+	  <option value="17057">17057</option>
+      <option value="16318">16318</option>
+	 </select> 
+	
+	<label for="status">Train Status:</label></br>
+	<input type="radio" id ="status" name="status" value="AC">AC<input type="radio" name="status" value="GEN">GEN</br></br>
+	
+	<h4>Do you want to get down at intermediate station?</h4><input type="radio"  name="intr" value="Y">Yes<input type="radio" name="intr" value="N">No</br></br>
+	<h4>Pantry:</h4>
+		<label for="dinner">Dinner</label>
+		<select id="dinner" name="dinner">
+		<option value="Y">Yes</option>
+		<option value="N">No</option>
+		</select>
+		<label for="lunch">Lunch</label>
+		<select id="lunch" name="lunch">
+		<option value="Y">Yes</option>
+		<option value="N">No</option>
+		</select>
+		<label for="break">Breakfast</label>
+		<select id="break" name="break">
+		<option value="Y">Yes</option>
+		<option value="N">No</option>
+		</select>
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+</body>
+</html>
+
+	
+	
+	
+
+    

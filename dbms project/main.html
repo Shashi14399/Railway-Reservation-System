@@ -1,0 +1,139 @@
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.fa {
+position:absolute;
+top:116px;
+  padding: 20px;
+  font-size: 30px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 2px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+position:absolute;
+	    left:5px;
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+position:absolute;
+	    left:65px;
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+position:absolute;
+	    left:125px;
+  background: #dd4b39;
+  color: white;
+}
+	.fa-youtube {
+	    position:absolute;
+	    left:185px;
+		background: #bb0000;
+		color: white;
+}
+	.btn-group button {
+		width:25%;
+		background-color: #000; 
+		border: 1px solid green; 
+		color: white; 
+		padding: 10px 24px; 
+		cursor: pointer; 
+		float: left; 
+	}
+
+
+	.btn-group:after {
+		content: "";
+		clear: both;
+		display: table;
+	}
+
+	.btn-group button:not(:last-child) {
+		border-right: none; 
+	}
+
+	.btn-group button:hover {
+		background-color: #4CAF50;
+	}
+	h1{
+		font-size:40px;
+		font-family: "Times New Roman", Times, serif;
+		text-align:center;
+	}
+	img{
+	float:right;
+	border: 3px solid green;
+	border-radius: 8px;
+	}
+	.b{
+	position:absolute;
+	top:230px;
+	left:5px;
+  background-color:#33d6ff;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+}
+.b:hover {
+		background-color:green;
+	}
+	.b1{
+	position:absolute;
+	top:320px;
+	left:5px;
+  background-color:#33d6ff;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+}
+.b1:hover {
+		background-color:green;
+	}
+	</style>
+</head>
+<body>
+	<h1>Indian Railway Reservation</h1>
+	<div class="btn-group">
+		<button onClick="window.location='book.html';">Book</button>
+		<button onClick="window.location='seats.php';">Seat Availability</button>
+		<button onClick="window.location='fare.html';">Fare Enquiry</button>
+		<button onClick="window.location='help.html';">Help</button>
+	</div>
+	<img id="scream" width=75% height="600"  src="main.jpg" >
+	<div>
+		<a href="#" class="fa fa-facebook"></a>
+		<a href="#" class="fa fa-twitter"></a>
+		<a href="#" class="fa fa-google"></a>
+		<a href="#" class="fa fa-youtube"></a>
+	</div>
+	<button class='b' onClick="window.location='cancel.html';">Want to cancel your ticket</button>
+	<button class='b1'onClick="window.location='train_details.html';">Check Train Details Here</button>
+</body>
+</html>
